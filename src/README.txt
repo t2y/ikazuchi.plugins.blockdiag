@@ -44,7 +44,7 @@ Show blockdiag's diagram from ".diag" file with web browser::
 
     $ ikazuchi blockdiag -d examples/simple.diag 
 
-Show blockdiag's diagram with Tkinter Editor.
+Show blockdiag's diagram with Tkinter Editor::
 
     $ ikazuchi blockdiag -i -d examples/simple.diag 
 
