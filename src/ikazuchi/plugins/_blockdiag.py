@@ -110,8 +110,8 @@ class BlockdiagEditor(object):
         self.text_frame.pack(fill=Tk.BOTH, expand=1, padx=3, pady=3)
         self.image_frame = Tk.Frame(self.frame)
         self.image_frame.pack(fill=Tk.BOTH, expand=1, padx=3, pady=3)
-        self.image_frame.grid_rowconfigure(0, weight=1, minsize=0)     
-        self.image_frame.grid_columnconfigure(0, weight=1, minsize=0)  
+        self.image_frame.grid_rowconfigure(0, weight=1, minsize=0)
+        self.image_frame.grid_columnconfigure(0, weight=1, minsize=0)
 
         # Button
         self.upd_btn = Tk.Button(self.btn_frame, bd=2, text="Update Canvas",
@@ -137,7 +137,7 @@ class BlockdiagEditor(object):
         self.canvas = Tk.Canvas(self.image_frame, scrollregion=(0, 0,
                             self.image.width(), self.image.height()))
         self.canvas.grid(row=0, column=0, sticky=Tk.N + Tk.E + Tk.W + Tk.S)
-        # Add Scrollbar 
+        # Add Scrollbar
         xscr = Tk.Scrollbar(self.image_frame,
                 orient=Tk.HORIZONTAL, command=self.canvas.xview)
         xscr.grid(row=1, column=0, sticky=Tk.E + Tk.W)
